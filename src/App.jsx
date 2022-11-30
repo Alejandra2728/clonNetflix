@@ -1,8 +1,17 @@
+import { Route, Routes } from 'react-router-dom'
+import {useState} from 'react'
+import Navbar from './common/components/Navbar'
+import Home from './pages/Home/Home'
+
 function App () {
+
   return (
-    <div className='App'>
-      APP
-    </div>
+    <>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
+    </>
   )
 }
 

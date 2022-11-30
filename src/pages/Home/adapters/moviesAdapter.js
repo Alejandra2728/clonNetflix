@@ -14,4 +14,5 @@ export const adapter = (movies) => {
       title: movie.title
     }
   })
+
 }
